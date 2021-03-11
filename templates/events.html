@@ -1,0 +1,127 @@
+<!--This pages displays the events in the fest.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENTS_FREON</title>
+    <!--  Linking the external style sheet style.css  -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!--  Linking the Google font APIs- Poppins, Lato  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--  Binding the entire body of the page using the class  "site-main-wrapper" -->
+    <div class="site-main-wrapper">
+        <!--Creating a hamberger icon that drops down a menu displaying the list of sections available throughout the website-->
+        <!--
+        <button class="hamberger">
+            <img src="./images/menu.png" alt="">
+        </button>-->
+        <!--Implementing the mobile navigation using the class mobile-nav using the tags
+             for unordered list and list-items, button-->
+        <div class="mobile-nav">
+            <button class="times"><img src="./images/times.png" alt=""></button>
+            <ul>
+                <li><a href="index.html#">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#sponsors">Sponsors</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="workshops.html">Workshops</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="index.html#contact">Contact Us</a></li>
+            </ul>
+        </div>
+        <!--Creating a header for the page that displays buttons and anchor tags, which when clicked re-direct to the
+             respective section or page.-->
+        <header>
+            <!--Creating a container to place all the tags, images, and text-->
+            <div class="container">
+                <nav id="main-nav" class="flex items-center justify-between">
+                    <div class="left flex items-center">
+                        <div class="branding">
+                            <img src="./images/1logo.jpg" alt="College Logo" style="height: 120px; width: 120px; ">
+                        </div>
+                        <div>
+                            <a href="index.html#">HOME</a>
+                            <a href="index.html#about">ABOUT</a>
+                            <a href="events.html">EVENTS</a>
+                            <a href="workshops.html">WORKSHOPS</a>
+                            <a href="index.html#sponsors">SPONSORS</a>
+                            <a href="team.html">TEAM</a>
+                        </div>
+        
+                    </div>
+                    <div class="right">
+                        <button onclick="document.location='index.html#contact'" class="btn btn-primary">Contact</button>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!--creating a section for evvents that displays the event's image, description, and title
+        using classes like events, container, secction-heading,card-wrapper, card-->
+        <section id="events" class="events">
+            <!--holding the entire events page in the class container-->
+            <div class="container">
+                <h1 class="section-heading">Our <span>Events</span></h1>
+                <!--class card-wrapper wraps all the cards together in a grid format
+                     wherr each card consists of the event's image, description and title.-->
+                <div class="card-wrapper">
+                    <div class="card">
+                        <img src="./images/1Concert.jpg" alt="">
+                        <h2>FREON Concert Night</h2>
+                        <p>FREON Nights is non-ticketed - an attribute that distinguishes it from shows akin; it enables students and public to access quality entertainment at its finest. Behind the warranted glitz and glamour, FREON Nights’ true intentions shine: diversity and inclusivity
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="./images/1Culturals.jpg" alt="">
+                        <h2>FREON Culturals</h2>
+                        <p>FREON Nights provides a platform for exquisite performers to display their artistic prowess, while providing the audience a once-in-a-lifetime opportunity to witness a confluence of technology and culture.</p>
+                
+                    </div>
+                    <div class="card">
+                        <img src="./images/1Trending_Tech.jpg" alt="">
+                        <h2>Seminar on Trending Technologies</h2>
+                        <p>Introduction to Machine Learning and Data science with Machine Learning algorithms such as logistic regression, decision trees and support vector machines and their implementations on data sets
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="./images/1Workshop.jpg" alt="">
+                        <h2>Workshops</h2>
+                        <p>Introduction to Robotics using Robot Operating System(ROS), Applying ROS concepts to Turtlesim for an hands-on experience. Introduction to URDF and navigation of robots
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Creating a footer to the page that displays the fest-logo, social media icons(clickable), and copyrights-->
+        <footer>
+            <img class="footer-logo" src="./images/1logo.jpg" alt="">
+            <div class="footer-socials">
+                <a href="https://www.google.com"><img src="./images/1website.png" alt=""></a>
+                <a href="https://www.facebook.com"><img src="./images/1facebook.png" alt=""></a>
+                <a href="https://www.twitter.com"><img src="./images/1twitter.png" alt=""></a>
+                <a href="https://www.pinterest.com"><img src="./images/1pinterest.png" alt=""></a>
+                <a href="https://www.instagram.com"><img src="./images/1instagram.png" alt=""></a>
+                <a href="https://www.github.com"><img src="./images/1github.png" alt=""></a>
+                <a href="https://www.contacts.com"><img src="./images/1contacts.png" alt=""></a>
+                <a href="https://www.linkedin.com"><img src="./images/1linkedin.png" alt=""></a>
+                <a href="https://www.youtube-play.com"><img src="./images/1youtube-play.png" alt=""></a>
+                <a href="mailto:freon2021@gmail.com"><img src="./images/gmail.png" alt=""></a>
+            </div>
+            <div class="copyright">
+                WD-01BM9   
+                Copyright 2021  All Rights Reserved.
+            </div>
+        </footer>
+
+    </div>
+    <!--Linking the JavaScript sources -->
+    <script src="./js/app.js"></script> 
+</body>
+</html>

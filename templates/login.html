@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>SIGN IN Form FREON2021</title>
+    <!--  Linking the external style sheet log.css  -->
+    <link rel="stylesheet" href="./css/log.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  
+  <body>
+    <!--  Binding the entire body of the page using the class  "wrapper" -->
+    <div class="wrapper">
+      <div class="title-text">
+        <div class="title login">Login Form</div>
+      </div>
+      <div class="form-container">
+        <div class="form-inner">
+          <form action="postsign/" class="login" method="post">
+            {% csrf_token %}
+            <div class="field">
+              <input type="text" placeholder="Email Address" id="Username"   required>
+            </div>
+            <div class="field">
+              <input type="password" placeholder="Password" id="Password"     required>
+            </div>
+            <div class="pass-link"><a href="#">Forgot password?</a></div>
+            <div class="field btn">
+              <div class="btn-layer"></div>
+              <input type="submit" value="Login">
+            </div>
+            <div class="signup-link">Not a member? <a href="signup.html">Signup now</a></div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const loginText = document.querySelector(".title-text .login");
+      const loginForm = document.querySelector("form.login");
+      const loginBtn = document.querySelector("label.login");
+      const signupBtn = document.querySelector("label.signup");
+      const signupLink = document.querySelector("form .signup-link a");
+      signupBtn.onclick = (()=>{
+        loginForm.style.marginLeft = "-50%";
+        loginText.style.marginLeft = "-50%";
+      });
+      loginBtn.onclick = (()=>{
+        loginForm.style.marginLeft = "0%";
+        loginText.style.marginLeft = "0%";
+      });
+      signupLink.onclick = (()=>{
+        signupBtn.click();
+        return false;
+      });
+    </script>
+
+
+
+  </body>
+</html>

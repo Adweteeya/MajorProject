@@ -1,0 +1,138 @@
+<!--This page displays workshops in the fest.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WORKSHOPS_FREON</title>
+    <!--  Linking the external style sheet style.css  -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!--  Linking the Google font APIs- Poppins, Lato  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--  Binding the entire body of the page using the class  "site-main-wrapper" -->
+    <div class="site-main-wrapper">
+        <!--
+        <button class="hamberger">
+            <img src="./images/menu.png" alt="">
+        </button>-->
+        <!--Implementing the mobile navigation using the class mobile-nav using the tags
+             for unordered list and list-items, button-->
+        <div class="mobile-nav">
+            <button class="times"><img src="./images/times.png" alt=""></button>
+            <ul>
+                <li><a href="index.html#">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#sponsors">Sponsors</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="workshops.html">Workshops</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="index.html#contact">Contact Us</a></li>
+            </ul>
+        </div>
+        <!--Creating a header for the page that displays buttons and anchor tags, which when clicked re-direct to the
+             respective section or page.-->
+        <header>
+            <!--Creating a container to place all the tags, images, and text-->
+            <div class="container">
+                <nav id="main-nav" class="flex items-center justify-between">
+                    <div class="left flex items-center">
+                        <div class="branding">
+                            <img src="./images/1logo.jpg" alt="College Logo" style="height: 120px; width: 120px; ">
+                        </div>
+                        <div>
+                            <a href="index.html#">HOME</a>
+                            <a href="index.html#about">ABOUT</a>
+                            <a href="events.html">EVENTS</a>
+                            <a href="workshops.html">WORKSHOPS</a>
+                            <a href="index.html#sponsors">SPONSORS</a>
+                            <a href="team.html">TEAM</a>
+                        </div>
+        
+                    </div>
+                    <div class="right">
+                        <button onclick="document.location='index.html#contact'" class="btn btn-primary">Contact</button>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!--creating a section for workshops using multiple classes-->
+        <section id="workshops" class="workshops">
+            <!--holding the entire workshops page in the class container-->
+            <div class="container">
+                <h1 class="section-heading">Our <span>Workshops</span></h1>
+                <p></p>
+                <!--class card-wrapper wraps all the cards together in a grid format
+                     wherr each card consists of the workshop's image, description and title.-->
+                <div class="card-wrapper">
+                    <div class="card">
+                        <img src="./images/1AI.jpg" alt="">
+                        <h2>Artificial Intelligence</h2>
+                        <p>To become proficient at implementing Data Mining methods using various programming frameworks, one must first assimilate the underlying concepts and struggle with the mathematics behind it. At the end of this workshop, you will be able to explore coded implementations of various Data Mining and ML algorithms with ease.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="./images/1IOT.jpg" alt="">
+                        <h2>Internet Of Things</h2>
+                        <p>Understanding Arduino Hardware and Programming with Arduino IDE, Learning about Microcontrollers and IOT, Understand Digital and Analog Circuits, Learning Different Communication Protocols(I2C, SPI)
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="./images/1Machine_Learning.jpg" alt="">
+                        <h2>Machine Learning</h2>
+                        <p>Introduction to Machine Learning and Data science with Machine Learning algorithms such as logistic regression, decision trees and support vector machines and their implementations on data sets
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="./images/1Robotics.jpg" alt="">
+                        <h2>Robotics</h2>
+                        <p>Introduction to Robotics using Robot Operating System(ROS), Applying ROS concepts to Turtlesim for an hands-on experience. Introduction to URDF and navigation of robots
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="./images/1Web_Development.jpg" alt="">
+                        <h2>Web Development with Python</h2>
+                        <p>Introduction to Python, Web scraping, Basic HTML, Backend using Flask and Basic introduction to github pages or heroku. Combining these to create a website.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="./images/1Workshop.jpg" alt="">
+                        <h2>Creative Coding</h2>
+                        <p>An experiential and interactive workshop for enthusiasts in Coding and Creativity. Based on the triarchic theory of intelligence - including analytical, creative and practical knowledge. Come up with out of the box solutions and improve your problem solving and decision making skills. Creativity when combined with coding and maths can also help you entertain and wonder at the beauty of numbers.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Creating a footer to the page that displays the fest-logo, social media icons(clickable), and copyrights-->
+        <footer>
+            <img class="footer-logo" src="./images/1logo.jpg" alt="">
+            <div class="footer-socials">
+                <a href="https://www.google.com"><img src="./images/1website.png" alt=""></a>
+                <a href="https://www.facebook.com"><img src="./images/1facebook.png" alt=""></a>
+                <a href="https://www.twitter.com"><img src="./images/1twitter.png" alt=""></a>
+                <a href="https://www.pinterest.com"><img src="./images/1pinterest.png" alt=""></a>
+                <a href="https://www.instagram.com"><img src="./images/1instagram.png" alt=""></a>
+                <a href="https://www.github.com"><img src="./images/1github.png" alt=""></a>
+                <a href="https://www.contacts.com"><img src="./images/1contacts.png" alt=""></a>
+                <a href="https://www.linkedin.com"><img src="./images/1linkedin.png" alt=""></a>
+                <a href="https://www.youtube-play.com"><img src="./images/1youtube-play.png" alt=""></a>
+                <a href="mailto:freon2021@gmail.com"><img src="./images/gmail.png" alt=""></a>
+            </div>
+            <div class="copyright">
+                WD-01BM9   
+                Copyright 2021  All Rights Reserved.
+            </div>
+        </footer>
+        
+    </div>
+    <!--Linking the JavaScript sources -->
+    <script src="./js/app.js"></script> 
+</body>
+</html>

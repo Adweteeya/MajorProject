@@ -1,0 +1,217 @@
+<!-- The main page for the College Fest Management Website   -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Fest Management</title>
+    <!--  Linking the external style sheet style.css  -->
+    <link rel="stylesheet" href="./css/style.css">  
+    <!--  Linking the Google font APIs- Poppins, Lato  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <!--  Linking the slick carousel to apply the sliding effect to slides  -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    
+</head>
+<body>
+    <!--  Binding the entire body of the page using the class  "site-main-wrapper" -->
+    <div class="site-main-wrapper">
+        <!--Creating a hamberger icon that drops down a menu displaying the list of sections available throughout the website-->
+        <button class="hamberger">
+            <img src="./images/menu.png" alt="">
+        </button>
+        <!--Implementing the mobile navigation using the class mobile-nav using the tags
+             for unordered list and list-items, button-->
+        <div class="mobile-nav">
+            <button class="times"><img src="./images/times.png" alt=""></button>
+            <ul>
+                <li><a href="index.html#">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="signup.html">SignUp</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="index.html#sponsors">Sponsors</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="workshops.html">Workshops</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="index.html#contact">Contact Us</a></li>
+                
+            </ul>
+        </div>
+        <!--Creating a header for the page that displays buttons and anchor tags, which when clicked re-direct to the
+             respective section or page.-->
+        <header>
+            <!--Creating a container to place all the tags, images, and text-->
+            <div class="container">
+                <!--Creating a navigation bar that serves as the header-->
+                <nav id="main-nav" class="flex items-center justify-between">
+                    <div class="left flex items-center">
+                        <div class="branding">
+                            <img src="./images/1logo.jpg" alt="College Logo" style="height: 120px; width: 120px; ">
+                        </div>
+                        <div>
+                            <a href="#home">HOME</a>
+                            <a href="#about">ABOUT</a>     
+                            <a href="events.html">EVENTS</a>
+                            <a href="workshops.html">WORKSHOPS</a> 
+                            <a href="#sponsors">SPONSORS</a>
+                            <a href="team.html">TEAM</a>
+                            <a href="login.html">LOGIN</a>
+                            <a href="signup.html">SIGNUP</a>
+                            
+                        </div>
+        
+                    </div>
+                    <div class="right">
+                        <button onclick="document.location='index.html#contact'" class="btn btn-primary">Contact</button>
+                    </div>
+                </nav>
+                <!--Creating the home section that displays the image of the college, college description-->
+                <div id="home" class="clg flex items-center justify-between">
+                    <div class="left flex-1 flex justify-center">
+                        <img src="./images/1clg.jpeg" alt="College image" style="opacity: 0.8; position: relative; background-repeat: no-repeat; float: right; width:800px; height:600px;">
+                    </div>
+                    <div class="right flex-1">
+                        <h4>ARYAN IMPERIAL COLLEGE</h4>
+                        <h1>FREON FEST<span> 2021</span></h1>
+                        <p>Research Oriented Holistic Education with focus on 
+                            Academics & Value Addition. <br>
+                            Internships/ Industry Training/ Live projects
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--Creating a section using the class about, that introduces about the fest with the help of flex.-->
+        <section id="about" class="about">
+            <div class="container flex items-center about-inner-wrap">
+                <div class="flex-1">
+                    <img 
+                   class="about-me-image" src="./images/1logo.jpg">
+                </div>
+                <div class="flex-1 right">
+                    <h1>FREON FEST <span> 2021</span></h1>
+                    <h3>AMI EMPRESIA</h3>
+                    <p>Being the first in the world to be ISO 9001:2015 certified, wholly student run tech festival, FREON FEST stands out from the rest in being the largest and one of the most unique tech festivals ever celebrated in India and the world. All of this fuelled by our seamless passion for the ‘infinite possibilities’.
+                        Our fest was born with one goal in mind: to create and sustain a society of inquisitive minds, who learn and innovate by interacting with each other and industries. For the very same reason, we organize a host of memorable events that keep getting better.
+                        We look at the most prevalent social and economic issues of the time and come up with innovative and economical solutions to tackle them.
+
+
+                    </p>
+                    <!--Created a class social that displays icons to various social-networking sites of the fest, which when clicked redirect tot the respective social media site.-->
+                    <div class="social">
+                        <a href="https://www.google.com"><img src="./images/1website.png" alt=""></a>
+                        <a href="https://www.facebook.com"><img src="./images/1facebook.png" alt=""></a>
+                        <a href="https://www.twitter.com"><img src="./images/1twitter.png" alt=""></a>
+                        <a href="https://www.pinterest.com"><img src="./images/1pinterest.png" alt=""></a>
+                        <a href="https://www.instagram.com"><img src="./images/1instagram.png" alt=""></a>
+                        <a href="https://www.github.com"><img src="./images/1github.png" alt=""></a>
+                        <a href="https://www.contacts.com"><img src="./images/1contacts.png" alt=""></a>
+                        <a href="https://www.linkedin.com"><img src="./images/1linkedin.png" alt=""></a>
+                        <a href="https://www.youtube-play.com"><img src="./images/1youtube-play.png" alt=""></a>
+                        <a href="mailto:freon2021@gmail.com"><img src="./images/gmail.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Creating a section for sponsors using the slick carousel that slides each sponsor-slide, and classes like sponsors
+            , container,section-headding, slider, slide, slider-dots.-->
+        <section id="sponsors" class="sponsors">
+            <div class="container">
+                <h1 class="section-heading"><span>Our</span> Sponsors</h1>
+                <div class="slider">
+                    <div class="slide">
+                        <img src="./images/1powered-by-sponsors.png" alt="">
+                        
+                        <span>POWERED-BY SPONSORS</span>
+                    </div>
+                    <div class="slide">
+                        <img src="./images/1presenting_sponsor.png" alt="">
+                        <span>PRESENTED-BY SPONSORS</span>
+                    </div>
+                    <div class="slide">
+                        <img src="./images/1print-media_sponsors.jpg" alt="">
+                        <span>PRINT-MEDIA SPONSORS</span>
+                    </div>
+                    <div class="slide">
+                        <img src="./images/1coding_sponsors.png" alt="">
+                        <span>CODING SPONSORS</span>
+                    </div>
+                </div>
+                <div class="slider-dots"></div>
+            </div>
+        </section>
+        <!--Creating a section for contact thatt displays the contact details and a form where once can send queries or messages.
+        This is done using classes like contact, container, section-heading, card, and many more.-->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h1 class="section-heading">Contact <span>Us</span></h1>
+                <!--Card-wrapper class to wrap the image/icon, text and other details-->
+                <div class="card-wrapper">
+                    <!--Card class to wrap the design for image and text-->
+                    <div class="card">
+                        <img src="./images/1phone-ringing.png"alt="">
+                        <h1>Call us on</h1>
+                        <h6>+91 8956322154</h6>
+                    </div>
+                    <div class="card">
+                        <img src="./images/1map.png"alt="">
+                        <h1>Visit Office</h1>
+                        <h6>5 255 Park Avenue Baker Street</h6>
+                    </div>
+                    <div class="card">
+                        <img src="./images/gmail.png"alt="">
+                        <h1>Email us at</h1>
+                        <h6>freon2021@gmail.com</h6>
+                    </div>
+                </div>
+                <!--Form to mail your queries using classes input-wrap, input-wrap-2, btn-wrapper-->
+                <form action="">
+                    <div class="input-wrap">
+                        <input type="text" placeholder="Your Name *" id="Username">
+                        <input type="email" placeholder="Your Email *" id="email-id">
+                    </div>
+                    <div class="input-wrap-2">
+                        <input type="text" placeholder="Your Subject....." id="subject">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message..." id="message"></textarea>
+                    </div>
+                    <div class="btn-wrapper">
+                        <button class="btn btn-primary" type="submit">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!--Creating a footer to the page that displays the fest-logo, social media icons(clickable), and copyrights-->
+        <footer>
+            <img class="footer-logo" src="./images/1logo.jpg" alt="">
+            <div class="footer-socials">
+                <a href="https://www.google.com"><img src="./images/1website.png" alt=""></a>
+                <a href="https://www.facebook.com"><img src="./images/1facebook.png" alt=""></a>
+                <a href="https://www.twitter.com"><img src="./images/1twitter.png" alt=""></a>
+                <a href="https://www.pinterest.com"><img src="./images/1pinterest.png" alt=""></a>
+                <a href="https://www.instagram.com"><img src="./images/1instagram.png" alt=""></a>
+                <a href="https://www.github.com"><img src="./images/1github.png" alt=""></a>
+                <a href="https://www.contacts.com"><img src="./images/1contacts.png" alt=""></a>
+                <a href="https://www.linkedin.com"><img src="./images/1linkedin.png" alt=""></a>
+                <a href="https://www.youtube-play.com"><img src="./images/1youtube-play.png" alt=""></a>
+                <a href="mailto:freon2021@gmail.com"><img src="./images/gmail.png" alt=""></a>
+            </div>
+            <div class="copyright">
+                WD-01BM9   (Web Development January Batch) <br>
+                Copyright 2021  All Rights Reserved.        For queries contact gururenuka3@gmail.com (front-end designer), adweteeya1999@gmail.com (back-end designer).
+            </div>
+        </footer>
+    </div>
+    <!--Linking the JavaScript sources for slick carousel-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+
+    <script src="./js/app.js"></script> 
+</body>
+</html>
